@@ -3,7 +3,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 
 const Ripple = React.memo(function Ripple({
-  mainCircleSize = 210,
+  mainCircleSize = 190,
   mainCircleOpacity = 0.4,
   numCircles = 15,
   className,
@@ -11,7 +11,7 @@ const Ripple = React.memo(function Ripple({
   return (
     <div
       className={cn(
-        "pointer-events-none select-none absolute inset-0 [mask-image:linear-gradient(to_bottom,white,transparent)]",
+        "pointer-events-none select-none absolute inset-0 [mask-image:linear-gradient(to_bottom,white,transparent)] hidden lg:inline ",
         className
       )}
     >

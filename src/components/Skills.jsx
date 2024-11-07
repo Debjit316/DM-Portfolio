@@ -37,13 +37,14 @@ const Skills = () => {
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-4"
+        className="flex flex-wrap items-center justify-center gap-4 "
       >
         <motion.div
           variants={iconVar(2.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800"
+          className="rounded-2xl border-4 border-neutral-800 tooltip"
+          data-tip="Java"
         >
           <FaJava className="text-6xl p-1 text-blue-400" />
         </motion.div>
@@ -52,7 +53,8 @@ const Skills = () => {
           variants={iconVar(5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800"
+          className="rounded-2xl border-4 border-neutral-800 tooltip"
+          data-tip="React"
         >
           <RiReactjsLine className="text-6xl p-1 text-cyan-400" />
         </motion.div>
@@ -61,7 +63,8 @@ const Skills = () => {
           variants={iconVar(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800"
+          className="rounded-2xl border-4 border-neutral-800 tooltip"
+          data-tip="Next JS"
         >
           <RiNextjsLine className="text-6xl p-1 text-neutral-300" />
         </motion.div>
@@ -70,7 +73,8 @@ const Skills = () => {
           variants={iconVar(4.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800"
+          className="rounded-2xl border-4 border-neutral-800 tooltip"
+          data-tip="Node JS"
         >
           <DiNodejs className="text-6xl p-2 text-green-600" />
         </motion.div>
@@ -79,7 +83,8 @@ const Skills = () => {
           variants={iconVar(6)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800"
+          className="rounded-2xl border-4 border-neutral-800 tooltip"
+          data-tip="PostgreSQL"
         >
           <SiPostgresql className="text-6xl p-2 text-sky-700" />
         </motion.div>
@@ -88,7 +93,8 @@ const Skills = () => {
           variants={iconVar(2)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800"
+          className="rounded-2xl border-4 border-neutral-800 tooltip"
+          data-tip="MongoDB"
         >
           <SiMongodb className="text-6xl p-2 text-green-400" />
         </motion.div>
@@ -97,7 +103,8 @@ const Skills = () => {
           variants={iconVar(5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800"
+          className="rounded-2xl border-4 border-neutral-800 tooltip"
+          data-tip="Firebase"
         >
           <RiFirebaseLine className="text-6xl p-2 text-orange-400" />
         </motion.div>
@@ -106,7 +113,8 @@ const Skills = () => {
           variants={iconVar(6.75)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800"
+          className="rounded-2xl border-4 border-neutral-800 tooltip"
+          data-tip="Neo4j"
         >
           <SiNeo4J className="text-6xl p-2 text-slate-400" />
         </motion.div>
@@ -115,7 +123,8 @@ const Skills = () => {
           variants={iconVar(4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800"
+          className="rounded-2xl border-4 border-neutral-800 tooltip"
+          data-tip="Express JS"
         >
           <SiExpress className="text-6xl p-2 text-neutral-200" />
         </motion.div>
